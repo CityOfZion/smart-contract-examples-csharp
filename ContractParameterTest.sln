@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.10
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContractParameterTest", "ContractParameterTest\ContractParameterTest.csproj", "{3E565D96-C5A9-4FD3-9730-44E74D9D5AFA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3E565D96-C5A9-4FD3-9730-44E74D9D5AFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E565D96-C5A9-4FD3-9730-44E74D9D5AFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E565D96-C5A9-4FD3-9730-44E74D9D5AFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E565D96-C5A9-4FD3-9730-44E74D9D5AFA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AB96F9D0-3131-44CA-BFE2-6CEFC9960DB6}
+	EndGlobalSection
+EndGlobal

@@ -7,6 +7,7 @@ namespace ContractParameterTest {
     public class Contract1 : FunctionCode {
         /**
          * helper contract to test the parameter editor in neo-developer-gui. Output added to "event log" tab of gui
+         * contract available on testnet at: f491a081ac6532d580c67fab8bbed4e5ad0ada82
          * 
          * param operation (05) should be one of: Boolean|Integer|ByteArray|Signature|Hash160|Hash256|PublicKey|String
          * param args must contain a single argument of the type matching operation

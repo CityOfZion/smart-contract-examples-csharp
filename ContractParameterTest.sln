@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.10
+VisualStudioVersion = 15.0.26730.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContractParameterTest", "ContractParameterTest\ContractParameterTest.csproj", "{3E565D96-C5A9-4FD3-9730-44E74D9D5AFA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorContract", "CalculatorContract\CalculatorContract.csproj", "{473911C1-292E-4219-ABFF-E8AF81CED1B9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{3E565D96-C5A9-4FD3-9730-44E74D9D5AFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3E565D96-C5A9-4FD3-9730-44E74D9D5AFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3E565D96-C5A9-4FD3-9730-44E74D9D5AFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{473911C1-292E-4219-ABFF-E8AF81CED1B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{473911C1-292E-4219-ABFF-E8AF81CED1B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{473911C1-292E-4219-ABFF-E8AF81CED1B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{473911C1-292E-4219-ABFF-E8AF81CED1B9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -13,7 +13,7 @@ ContractParameterTest: 6580a9a2f55b32c054e9e7258614c30f55958c59
 helper contract to test basic addition and subtraction of two itnegers
 
 # Testnet Address
-ContractParameterTest: 4769475bcb0326f6b470bd493be094a5180fe329
+CalculatorContract: 4769475bcb0326f6b470bd493be094a5180fe329
 
 # Arguments
 * param 05 operation should be one of: add|sub

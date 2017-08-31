@@ -9,10 +9,11 @@ namespace CalculatorContract
      * simple calculator supporting add/subtract
      * param 05 (string) add|sub
      * object[] int, int
+     * return 02
      */
     public class Contract1 : FunctionCode
     {
-        public static void Main(string operation, params object[] args)
+        public static int Main(string operation, params object[] args)
         {
             int arg0 = (int)args[0];
             int arg1 = (int)args[1];
@@ -31,7 +32,7 @@ namespace CalculatorContract
             }
 
             Runtime.Notify("Calculator", operation, result);
-            return;
+            return result;
         }
 
         static private int CalculatorSub(int a, int b)

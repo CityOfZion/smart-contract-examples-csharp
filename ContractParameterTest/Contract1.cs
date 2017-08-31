@@ -6,11 +6,11 @@ using System.Numerics;
 namespace ContractParameterTest {
     public class Contract1 : FunctionCode {
 
-        //[Appcall("d4e86a20af4cd4508de71c57bb211db8b1688a28")]
-        //public static extern int CalculatorContract(string operation, params object[] args);
+        [Appcall("4769475bcb0326f6b470bd493be094a5180fe329")]
+        public static extern int CalculatorContract(string operation, params object[] args);
         /**
          * helper contract to test the parameter editor in neo-developer-gui. Output added to "event log" tab of gui
-         * contract available on testnet at: 
+         * contract available on testnet at: 6580a9a2f55b32c054e9e7258614c30f55958c59
          * 
          * param operation (05) should be one of: Boolean|Integer|ByteArray|Signature|Hash160|Hash256|PublicKey|Array|Calculator
          * param args must contain a single argument of the type matching operation unless you have used Calculator in which case you must provide string(add|sub), int, int
@@ -21,9 +21,9 @@ namespace ContractParameterTest {
 
             if(operation == "Calculator")
             {
-                Runtime.Log("Not supported yet");
-                //CalculatorContract((string)args[0], (int)args[1], (int)args[2]);
-                return true;
+                int result = CalculatorContract((string)args[0], (int)args[1], (int)args[2]);
+                Runtime.Notify("Calculator Result", result);
+                return operation;
             }
 
             if (operation == "Boolean") {
@@ -54,6 +54,10 @@ namespace ContractParameterTest {
             {
                 object[] arrayObject = (object[])args[0];
                 Runtime.Notify(operation, arrayObject.Length);
+                for (int i = 0; i < arrayObject.Length; i++)
+                {
+                    Runtime.Notify("Array Item", i, arrayObject[i]);
+                }
                 return arrayObject.Length;
             }
 
